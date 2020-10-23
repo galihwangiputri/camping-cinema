@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* on web */
+@media screen and (max-width: 1440px){
+    body {
+        margin: 0;
+    }
+    
+    header {
+        /* header rata kolom */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        padding-bottom: 5px;
+    }
+    
+    .header {
+        margin: 0;
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+    
+    .logo {
+        /* background: darksalmon; */
+        /* margin: 10px; */
+        margin: 15px 3px 3px 25px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 45px;
+        color: #000000;
+    }
+    
+    nav ul {
+        /* nav rata kolom*/
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        margin-top: 32px;
+        margin-left: 12px;
+    }
+    
+    nav li {
+        display: inline;
+        list-style: none;
+        flex-grow: 1;
+    }
+    
+    nav a {
+        text-decoration: none;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .button-nav{
+        padding: 16px;
+        color: #FFFFFF;
+        background: #24C0FF;
+        border-radius: 50px;
+    }
+    
+    .about-us,
+    .why-us {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .about-us img {
+        flex-grow: 1;
+        padding: 15px;
+    }
+    
+    .about-us p {
+        flex-grow: 1.5;
+        padding: 15px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .bundle-service>p {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .bundle-service {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 40px;
+        box-sizing: border-box;
+    }
+    
+    .card-flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .card-service {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        flex-grow: 1;
+        /* flex-basis: 33%; */
+        margin: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .card-service h2 {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    p.card-p1 {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    p.card-p2 {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 31px;
+        line-height: 39px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .why-us {
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+    
+    .why-us img {
+        flex-grow: 1;
+        padding: 15px;
+        align-items: center;
+    }
+    
+    .why-us p {
+        flex-grow: 1.5;
+        padding: 15px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 60px;
+        color: #000000;
+    }
+    
+    .movie {
+        margin-bottom: 20px;
+    }
+    
+    .movie-t h2 {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 49.9672px;
+        line-height: 62px;
+        text-align: center;
+        color: #000000;
+        margin: 0;
+    }
+    
+    .movie-col {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .movie-list {
+        flex-grow: initial;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    .movie-list p {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27.7596px;
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    .get-ticket {
+        display: flex;
+        flex-direction: row;
+        margin-top: 200px;
+    }
+    
+    .ticket-flex-col {
+        flex-grow: 1;
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .ticket-col {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 48px;
+        color: #000000;
+        margin-bottom: 20px;
+        flex-basis: 10%;
+    }
+    
+    .ticket-rsvp {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 20px 20px 30px 20px;
+        width: 443px;
+        height: 660.08px;
+    }
+    
+    .ticket-rsvp-card {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    .input-text {
+        width: auto;
+        height: auto;
+    }
+    
+    .field {
+        margin-bottom: 10px;
+        /* background: coral; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .rsvp-card {
+        flex-grow: 1;
+    }
+    
+    .field label,
+    .field-meals label {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 23.4786px;
+        line-height: 29px;
+        color: #000000;
+    }
+    
+    .field input {
+        font-family: Quicksand;
+        font-size: 23.4786px;
+        line-height: 29px;
+        height: 31.86px;
+        border-radius: 5.03113px;
+        background: #C4C4C4;
+        border-style: none;
+    }
+    
+    .field-meals {
+        margin-top: 30px;
+    }
+    
+    .one-meal {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20.1245px;
+        line-height: 25px;
+        color: #000000;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .elemen-big {
+        flex-grow: 17;
+        flex-basis: 10%;
+        margin: 0;
+    }
+    
+    .elemen-small {
+        flex-grow: 3;
+        flex-basis: 10%;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .button {
+        border-style: none;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 3.35409px rgba(0, 0, 0, 0.25);
+        border-radius: 5.03113px;
+        box-sizing: border-box;
+        padding: 5px;
+    
+        /* font style */
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 25px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .button-2 {
+        box-sizing: border-box;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .btn-submit {
+        align-items: center;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 23.4786px;
+        line-height: 45px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #24C0FF;
+        box-shadow: 0px 2.55556px 10.2222px rgba(0, 0, 0, 0.25);
+        border-radius: 12.7778px;
+        border-style: none;
+        padding: 0 30px;
+    }
+    
+    .info {
+        margin-top: 100px;
+        background: #F3B304;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .info-text {
+        flex-grow: 1;
+    }
+    
+    .info-detail {
+        display: flex;
+        /* flex-direction: row; */
+    }
+    
+    .info-detail-p1 {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 45px;
+        text-align: left;
+        color: #000000;
+        flex-basis: 30%;
+        margin-left: 100px;
+    }
+    
+    .info-detail-p2 {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 45px;
+        color: #000000;
+        flex-basis: 70%;
+    }
+    
+    .info-socialmedia {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .info-socialmedia img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .info-socialmedia img,
+    .info-socialmedia label {
+        flex-grow: 25%;
+        margin: 10px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .profile {
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-bottom: 30px;
+        /* centering card */
+        margin: 100px auto;
+        padding: 20px;
+        width: fit-content;
+    }
+    
+    .profile h2 {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    p.name {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .adds {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .profile img,
+    .profile p {
+        flex-grow: 1;
+    }
+}
+
+/* on mobile device */
+
+@media screen and (max-width: 600px){
+    header{
+        visibility: hidden;
+    }
+
+    .about-us{
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .about-us-1{
+        flex-direction: column-reverse;
+    }
+
+    .about-us-2{
+        flex-direction: column;
+    }
+    
+    .about-us img {
+        flex-grow: 1;
+        padding: 15px;
+    }
+    
+    .about-us p {
+        flex-grow: 1.5;
+        padding: 15px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .bundle-service{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bundle-service>p,
+    .card-flex-row{
+        flex-grow: 1;
+    }
+
+    .card-flex-col{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-service{
+        flex-grow: 1;
+    }
+
+    .why-us{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .get-ticket{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ticket-flex-col{
+        flex-grow: 1;
+    }
+}

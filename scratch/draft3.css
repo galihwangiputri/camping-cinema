@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-nav{
+    list-style: none;
+    display: none;
+}
+
+
+    
+
+
+
+.logo, .nav-links a{
+    text-decoration: none;
+}
+
+.main-nav li{
+   
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+.logo{
+    background-color: gold;
+    display: inline-block;
+}
+
+.navbar-toggle{
+    position: absolute;
+    top: 0px;
+    right: 2px;
+}
+
+.active{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
