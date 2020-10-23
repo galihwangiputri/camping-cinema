@@ -4,33 +4,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/pop_up_window.css">
-    <link rel="stylesheet" href="assets/styles/main_window.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <main>
-        <div class="main-center">
-            <button onclick="minus()">-</button>
-            <h3 id="number">0</h3>
-            <h3 id="fufu">0</h3>
-            <button onclick="add('#fufu')">+</button>
-            <button onclick="nul()">null</button>
+    <header>
+        <div class="header-responsive">
+            <h1 class="logo-responsive">
+                camping <br>
+                cinema
+            </h1>
+            <span id="hamburger-icon">
+                <img src="assets/images/menu.svg" alt="menu" onclick="navbarShow()">
+            </span>
         </div>
+        <h1 class="logo">
+            camping <br>
+            cinema
+        </h1>
+        <nav id="navUl">
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#service">service</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a class="button-nav" href="#reservation"><b>Get Reservation</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="about-us" id="about">
+            <section class="about-us-1">
+                <img src="assets/images/about-us.svg" alt="about-us-1">
+                <p> Do you have something
+                    <br> to try on <b> your watching
+                        <br> cinema experience? </b>
+                </p>
+            </section>
+            <section class="about-us-2">
+                <p>
+                    Try <b>camping cinema</b>,
+                    <br> where you can watch
+                    <br> movie from camping tent
+                </p>
+                <img src="assets/images/about-us-2.svg" alt="about-us-2">
+            </section>
+        </article>
+        <article class="bundle-service" id="service">
+            <p>Pick your <b>meal</b>, <b>sanitary-kit</b>, and <b>memory-kit</b> </p>
+            <div class="card-flex-row card-flex-col">
+                <div class="card-service">
+                    <h2>Meals Plan</h2>
+                    <p class="card-p1">
+                        Cilok
+                        <br> Roti bakar
+                        <br> Mie cup
+                        <br> Pisang goreng
+                        <br> Hottang
+                        <br> Kentang goreng
+                    </p>
+                </div>
+                <div class="card-service">
+                    <h2>Refreshing-kit</h2>
+                    <p class="card-p1">
+                        Bantal
+                        <br> Selimut
+                        <br> Hand sanitizer
+                    </p>
+                </div>
+                <div class="card-service">
+                    <h2>Memory-in</h2>
+                    <p class="card-p2">
+                        Capture your memory,
+                        <br> with family or love one.
+                        <br> With polaroid camera
+                    </p>
+                    <p class="card-p1">3 Photo</p>
+                </div>
+            </div>
+        </article>
+        <article class="why-us" id="">
+            <img src="assets/images/why-us.svg" alt="why-us">
+            <p>
+                <b>Why us?</b>
+                <br>Max 3 person/ tent
+                <br> Tent size 2x1m
+                <br> 10 tent/ film
+            </p>
+        </article>
+        <article class="movie">
+            <h2><b>Movie</b> this week</h2>
+            </div>
+            <div class="movie-flex-row movie-flex-col">
+                <div class="movie-list">
+                    <p> <b>Orenji <br> Television</b></p>
+                    <img src="assets/images/UBhpOIHnazM.svg" alt="Orenji Television">
+                    <p>18.00 - 19.00</p>
+                </div>
+                <div class="movie-list">
+                    <p> <b>Get <br> the Iceberg</b></p>
+                    <img src="assets/images/UBhpOIHnazM-2.svg" alt="Get the Iceberg">
+                    <p>20.00 - 21.00</p>
+                </div>
+                <div class="movie-list">
+                    <p><b>Minion <br> Impossible</b></p>
+                    <img src="assets/images/UBhpOIHnazM-3.svg" alt="Minion Impossible">
+                    <p>22.00 - 23.00</p>
+                </div>
+            </div>
+        </article>
+        <article class="get-ticket" id="reservation">
+            <div class="ticket-flex-col">
+                <div class="ticket-banner">
+                    <p>
+                        <b>Grab it now</b>,
+                        <br> and get enjoyful memory
+                    </p>
+                    <img src="assets/images/get-ticket.svg" alt="get-ticket">
+                </div>
+            </div>
+            <div class="ticket-flex-col">
+                <div class=" ticket-rsvp">
+                    <h2 class="ticket-rsvp-card"><b>RSVP</b></h2>
+                    <div class="field">
+                        <label class="rsvp-card" for="input_name">Name</label>
+                        <input id="input_name" class="rsvp-card input-text"" type=" text">
+                    </div>
+                    <div class="field">
+                        <label class="rsvp-card" for="input_movie">Movie</label>
+                        <input id="input_movie" class="rsvp-card" type="text">
+                    </div>
+                    <div class="field">
+                        <label for="input_people">People</label>
+                        <input id="input_people" class="rsvp-card" type="text" placeholder="2">
+                    </div>
+                    <div class="field-meals">
+                        <label for="">Meals</label>
+                    </div>
+                    <div class="field meal-list">
+                        <div class="one-meal">
+                            <p class="elemen-big">Cilok</p>
+                            <button class="elemen-small button cilok-minus" onclick="sub('#cilok-num')">-</button>
+                            <p id="cilok-num" class="elemen-small">0</p>
+                            <button class="elemen-small button cilok-plus" onclick="add('#cilok-num')">+</button>
+                        </div>
+                        <div class="one-meal">
+                            <p class="elemen-big">Mie cup</p>
+                            <button class="elemen-small button mie-minus" onclick="sub('#mie-num')">-</button>
+                            <p id="mie-num" class="elemen-small">0</p>
+                            <button class="elemen-small button mie-plus" onclick="add('#mie-num')">+</button>
+                        </div>
+                        <div class="one-meal">
+                            <p class="elemen-big">Hottang</p>
+                            <button class="elemen-small button hottang-minus" onclick="sub('#hottang-num')">-</button>
+                            <p id="hottang-num" class="elemen-small">0</p>
+                            <button class="elemen-small button hottang-plus" onclick="add('#hottang-num')">+</button>
+                        </div>
+                        <div class="one-meal">
+                            <p class="elemen-big">Roti bakar</p>
+                            <button class="elemen-small button roti-minus" onclick="sub('#roti-num')">-</button>
+                            <p id="roti-num" class="elemen-small">0</p>
+                            <button class="elemen-small button roti-plus" onclick="add('#roti-num')">+</button>
+                        </div>
+                        <div class="one-meal">
+                            <p class="elemen-big">Pisang goreng</p>
+                            <button class="elemen-small button pisang-minus" onclick="sub('#pisang-num')">-</button>
+                            <p id="pisang-num" class="elemen-small">0</p>
+                            <button class="elemen-small button pisang-plus" onclick="add('#pisang-num')">+</button>
+                        </div>
+                        <div class="one-meal">
+                            <p class="elemen-big">Kentang goreng</p>
+                            <button class="elemen-small button kentang-minus" onclick="sub('#kentang-num')">-</button>
+                            <p id="kentang-num" class="elemen-small">0</p>
+                            <button class="elemen-small button kentang-plus" onclick="add('#kentang-num')">+</button>
+                        </div>
+                    </div>
+                    <div class="button-2">
+                        <button class="btn-submit" onclick="makeReservation()">Make Reservation</button>
+                    </div>
+                </div>
+            </div>
+        </article>
     </main>
 
-    <div class="modal-parent">
-        <div class="modal">
-            <h1>Number &nbsp<span id="result">0</span>&nbsp</h1>
-            <h1>Numbermmmmmmmmmmmmmm &nbsp<span id="">0</span>&nbsp</h1>
-            <h1>Number &nbsp<span id="">0</span>&nbsp</h1>
-            <h1>Number &nbsp<span id="">0</span>&nbsp</h1>
-            <h1>Number &nbsp<span id="">0</span>&nbsp</h1>
+    <footer>
+        <section class="info" id="contact">
+            <div class="info-text">
+                <div class="info-detail">
+                    <p class="info-detail-p1"> <b>open</b></p>
+                    <p class="info-detail-p2">sat and sun
+                        <br> 18.00 - 23.00 WIB</p>
+                </div>
+                <div class="info-detail">
+                    <p class="info-detail-p1"> <b>fee</b></p>
+                    <p class="info-detail-p2">Rp 50.000 /person
+                </div>
+                <div class="info-detail">
+                    <p class="info-detail-p1"><b>address</b></p>
+                    <p class="info-detail-p2">Jl. Lindar lindur 34,
+                        Dreamland, Neverland
+                </div>
+            </div>
+            <div class="info-socialmedia">
+                <img src="assets/images/instagram.svg" alt="instagram">
+                <img src="assets/images/twitter.svg" alt="twitter">
+                <label for="social-media">camping_cinema</label>
+            </div>
+        </section>
+    </footer>
+
+    <aside>
+        <div class="profile">
+            <h2>Profile</h2>
+            <img src="assets/images/Putri's Avatar 2.svg" alt="Avatar profile">
+            <p class="name">Galih Wangi Putri <br>
+                <span class="adds">-Tim Bubur Ayam Diaduk</span>
+            </p>
+        </div>
+    </aside>
+
+    <div class="pop_up_window">
+        <div class="modal-parent">
+            <div class="thank">
+                <p><b>Thank you,</b>
+                    <br>excited to
+                    <br>see you here
+                </p>
+            </div>
+            <div class="modal">
+                <h2>RSVP</h2>
+                <p id="movie-name"></p>
+                <p id="movie-date">Sat, 23 December 2020</p>
+    
+                <h3>Name</h3>
+                <p id="name-final"></p>
+                <h3>People</h3>
+                <p id="ppl-final"><span> people(s)</span></p>
+                <h3>Meals</h3>
+                <table>
+                    <tr class="tbl-cilok">
+                        <td>Cilok</td>
+                        <td id="result-cilok">0</td>
+                    </tr>
+                    <tr class="tbl-mie">
+                        <td>Mie Cup</td>
+                        <td id="result-mie">0</td>
+                    </tr>
+                    <tr class="tbl-hottang">
+                        <td>Hottang</td>
+                        <td id="result-hottang">0</td>
+                    </tr>
+                    <tr class="tbl-roti">
+                        <td>Roti Bakar</td>
+                        <td id="result-roti">0</td>
+                    </tr>
+                    <tr class="tbl-pisang">
+                        <td>Pisang goreng</td>
+                        <td id="result-pisang">0</td>
+                    </tr>
+                    <tr class="tbl-kentang">
+                        <td>Kentang goreng</td>
+                        <td id="result-kentang">0</td>
+                    </tr>
+                </table>
+            </div>
             <span class="ex" draggable="true">&times;</span>
         </div>
     </div>
-    <script src="assets/scripts/counter.js"></script>
+    
+
+    <script src="assets/scripts/navbar.js"></script>
+    <script src="assets/scripts/rsvp.js"></script>
+
 </body>
 
 </html>
